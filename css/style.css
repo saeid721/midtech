@@ -918,13 +918,46 @@ body.quote-modal-locked{overflow:hidden;}
 @media(max-width:767px){
   .quote-modal-overlay{padding:0; align-items:flex-end;}
   .quote-modal{
-    max-width:100%; max-height:92vh; border-radius:var(--r-lg) var(--r-lg) 0 0;
-    padding:28px 22px 24px;
+    max-width:100%; max-height:88vh; border-radius:var(--r-lg) var(--r-lg) 0 0;
+    padding:20px 16px 18px;
     transform:translateY(100%);
   }
   .quote-modal-overlay.open .quote-modal{transform:translateY(0);}
-  .quote-form-grid{grid-template-columns:1fr; gap:14px;}
-  .quote-modal-header h3{font-size:20px;}
-  .quote-form-footer{flex-direction:column; align-items:stretch;}
-  .quote-submit-btn{width:100%;}
+  .quote-modal::before{
+    content:''; display:block; width:36px; height:4px; border-radius:2px;
+    background:var(--line); margin:0 auto 14px;
+  }
+  .quote-modal-close{
+    top:12px; right:12px; width:34px; height:34px; font-size:18px;
+  }
+  .quote-modal-header{margin-bottom:16px; padding-right:36px;}
+  .quote-modal-header .eyebrow{font-size:11px; margin-bottom:8px;}
+  .quote-modal-header h3{font-size:18px; margin:4px 0 6px;}
+  .quote-modal-header p{font-size:12.5px; line-height:1.45;}
+  .quote-form-grid{grid-template-columns:1fr; gap:12px;}
+  .quote-field label{font-size:12.5px;}
+  .quote-field input,
+  .quote-field select,
+  .quote-field textarea{
+    font-size:14px; padding:10px 12px;
+  }
+  .quote-field textarea{min-height:70px;}
+  .quote-form-footer{
+    flex-direction:column; align-items:stretch; gap:12px;
+    margin-top:18px; padding-top:14px;
+  }
+  .quote-form-note{font-size:11px; max-width:100%;}
+  .quote-submit-btn{width:100%; padding:13px 20px; font-size:14px; min-width:0;}
+  .quote-success{padding:12px 4px 4px;}
+  .quote-success .mi{font-size:44px; margin-bottom:12px;}
+  .quote-success h4{font-size:18px; margin-bottom:8px;}
+  .quote-success p{font-size:13px; margin-bottom:18px;}
+}
+
+@media(max-width:380px){
+  .quote-modal{padding:16px 14px 16px;}
+  .quote-modal-header h3{font-size:16.5px;}
+  .quote-field input,
+  .quote-field select,
+  .quote-field textarea{font-size:13.5px; padding:9px 11px;}
 }
