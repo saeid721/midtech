@@ -33,14 +33,14 @@
    ========================================================================== */
 html{
   scroll-behavior:smooth;
-  overflow-x:hidden;
+  overflow-x:clip;
   width:100%;
 }
 body{
   margin:0;
   padding:0;
   max-width:100%;
-  overflow-x:hidden;
+  overflow-x:clip;
   font-family:var(--font-body);
   color:var(--ink-900);
   font-size:16px;
