@@ -494,7 +494,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, input:focus-vis
   .service-mini{grid-template-columns:1fr; height:auto; min-height:auto;}
   .service-mini-img{aspect-ratio:16/8; height:auto;}
   .service-mini-body{padding:8px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:flex-start;}
-  .service-mini-body .mi{font-size:26px; margin:0 10px 0 0; flex:0 0 auto; width:auto;}
+  .service-mini-body .mi{font-size:24px; margin:0 8px 0 0; flex:0 0 auto; width:auto;}
   .service-mini-body h4{font-size:17px; margin:0; flex:1 1 auto; min-width:0;}
   .service-mini-body p{font-size:14px; flex:1 1 100%; width:100%; margin-top:10px; max-width:560px;}
 }
